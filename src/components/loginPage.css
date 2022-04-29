@@ -1,0 +1,53 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* flex: 1; */
+  width: 100%;
+}
+.loginContainer {
+  width: 80%;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 38px 15px rgb(0 0 0 / 43%);
+  box-shadow: 0px 0px 38px 15px rgb(0 0 0 / 43%);
+  height: 80%;
+}
+.colorContainer {
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  height: 100%;
+  width: 40%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(56, 214, 214, 1) 51%,
+    rgba(92, 128, 209, 1) 100%
+  );
+}
+.rightDiv {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.spanContainer {
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+}
+.leftDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 39%;
+}
+.leftDiv img {
+  width: 100px;
+  height: 100px;
+  opacity: 0.9;
+}
