@@ -43,14 +43,14 @@ const ListItem = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/table")
+      .get("https://personsaving.herokuapp.com/table")
       .then((response) => {
         setData(response.data);
       })
       .catch((err) => console.log(err));
   }, [check]);
   const handleDeletePerson = () => {
-    const domain = "http://localhost:8080/table/" + deleteName;
+    const domain = "https://personsaving.herokuapp.com/table" + deleteName;
     axios
       .delete(domain)
       .then((response) => {

@@ -33,7 +33,7 @@ const RegistrationForm = (props) => {
 
   const handleOk = () => {
     props.setVisible(false);
-    Axios.post("http://localhost:8080/table", {
+    Axios.post("https://personsaving.herokuapp.com/table", {
       name: newData.name,
       money: newData.money,
       location: newData.location,
